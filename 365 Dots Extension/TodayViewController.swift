@@ -25,19 +25,15 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
         var monthViews: [UIStackView] = []
 
-        for indexOfMonth in 1...12 {
+        let monthDays = [31, isLeapYear() ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        for (indexOfMonth, numberOfDays) in monthDays.enumerated() {
             var dayViews: [UIView] = []
-            let daysOfMonth = (indexOfMonth % 2 == 0) ? 30 : 31
-            for indexOfDay in 1...daysOfMonth {
+            for indexOfDay in 0...numberOfDays {
                 let dayView = UIView()
                 dayView.heightAnchor.constraint(equalToConstant: 4).isActive = true
                 dayView.widthAnchor.constraint(equalToConstant: 4).isActive = true
-                if (isLeapYear() && indexOfMonth == 2 && indexOfDay == 30) {
-                    dayView.backgroundColor = .clear
-                } else {
-                    let alpha: CGFloat = (indexOfMonth < dateComponents(.month) || (indexOfMonth == dateComponents(.month) && indexOfDay <= dateComponents(.day))) ? 0.25 : 1.0
-                    dayView.backgroundColor = #colorLiteral(red: 0, green: 0.9647058824, blue: 0.9176470588, alpha: 1).withAlphaComponent(alpha)
-                }
+                let alpha: CGFloat = (indexOfMonth + 1 < dateComponents(.month) || (indexOfMonth + 1 == dateComponents(.month) && indexOfDay + 1 <= dateComponents(.day))) ? 0.25 : 1.0
+                dayView.backgroundColor = #colorLiteral(red: 0, green: 0.9647058824, blue: 0.9176470588, alpha: 1).withAlphaComponent(alpha)
                 dayView.layer.cornerRadius = 2
                 dayView.clipsToBounds = true
                 dayViews.append(dayView)
