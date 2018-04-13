@@ -14,6 +14,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var labelContainer: UIView!
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
 
     var yearStackView: UIStackView!
 
@@ -22,6 +23,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
 
         yearLabel.text = String(dateComponents(.year))
         percentageLabel.text = percentageOfThisYear()
+        dayLabel.text = "\(nthOfDayInThisYear())/\(numberOfDaysInThisYear())"
 
         var monthViews: [UIStackView] = []
 
@@ -32,7 +34,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 let dayView = UIView()
                 dayView.heightAnchor.constraint(equalToConstant: 4).isActive = true
                 dayView.widthAnchor.constraint(equalToConstant: 4).isActive = true
-                let alpha: CGFloat = (indexOfMonth + 1 < dateComponents(.month) || (indexOfMonth + 1 == dateComponents(.month) && indexOfDay + 1 <= dateComponents(.day))) ? 0.25 : 1.0
+                let alpha: CGFloat = (indexOfMonth + 1 < dateComponents(.month) || (indexOfMonth + 1 == dateComponents(.month) && indexOfDay + 1 <= dateComponents(.day))) ? 1.0 : 0.2
                 dayView.backgroundColor = #colorLiteral(red: 0, green: 0.9647058824, blue: 0.9176470588, alpha: 1).withAlphaComponent(alpha)
                 dayView.layer.cornerRadius = 2
                 dayView.clipsToBounds = true
