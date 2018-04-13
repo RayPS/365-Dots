@@ -10,16 +10,35 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var dotsViewContainer: UIView!
+
+    @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var percentageLabel: UILabel!
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var teaButton: UIButton!
+
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        yearLabel.text = String(dateComponents(.year))
+        percentageLabel.text = percentageOfThisYear()
+        dayLabel.text = "\(nthOfDayInThisYear())/\(numberOfDaysInThisYear())"
+
+        teaButton.layer.cornerRadius = 16
+        teaButton.clipsToBounds = true
+
+
+        let dotsView = createDotsView()
+        dotsViewContainer.addSubview(dotsView)
+
+        dotsView.topAnchor.constraint(equalTo: dotsViewContainer.topAnchor).isActive = true
+        dotsView.leadingAnchor.constraint(equalTo: dotsViewContainer.leadingAnchor).isActive = true
+        dotsView.trailingAnchor.constraint(equalTo: dotsViewContainer.trailingAnchor).isActive = true
+        dotsView.bottomAnchor.constraint(equalTo: dotsViewContainer.bottomAnchor).isActive = true
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
