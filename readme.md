@@ -1,4 +1,4 @@
-![](365 Dots/Assets.xcassets/AppIcon.appiconset/iPhone-60@3x.png)
+![](365%20Dots/Assets.xcassets/AppIcon.appiconset/iPhone-60@3x.png)
 # 365 Dots
 A time progress of a year
 
