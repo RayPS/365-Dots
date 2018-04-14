@@ -15,10 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var percentageLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var teaButton: UIButton!
+    @IBOutlet weak var tipButton: UIButton!
 
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
     override func viewDidLoad() {
@@ -28,11 +28,11 @@ class ViewController: UIViewController {
         percentageLabel.text = percentageOfThisYear()
         dayLabel.text = "\(nthOfDayInThisYear())/\(numberOfDaysInThisYear())"
 
-        teaButton.layer.cornerRadius = 16
-        teaButton.clipsToBounds = true
+        tipButton.layer.cornerRadius = 16
+        tipButton.clipsToBounds = true
 
 
-        let dotsView = createDotsView()
+        let dotsView = createDotsView(withSize: 6)
         dotsViewContainer.addSubview(dotsView)
 
         dotsView.topAnchor.constraint(equalTo: dotsViewContainer.topAnchor).isActive = true
@@ -40,5 +40,14 @@ class ViewController: UIViewController {
         dotsView.trailingAnchor.constraint(equalTo: dotsViewContainer.trailingAnchor).isActive = true
         dotsView.bottomAnchor.constraint(equalTo: dotsViewContainer.bottomAnchor).isActive = true
     }
+
+    @IBAction func tipButtonTapped(_ sender: Any) {
+        tipButton.isHidden = true
+    }
+
+    override func viewDidLayoutSubviews() {
+        dotsViewContainer.backgroundColor = .clear
+    }
 }
+
 

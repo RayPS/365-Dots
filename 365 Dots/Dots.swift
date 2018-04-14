@@ -8,7 +8,7 @@
 
 import UIKit
 
-func createDotsView() -> UIStackView {
+func createDotsView(withSize size: CGFloat = 4) -> UIStackView {
 
     var monthViews: [UIStackView] = []
 
@@ -18,11 +18,11 @@ func createDotsView() -> UIStackView {
         for indexOfDay in 0...numberOfDays {
             let dayView = UIView()
             dayView.backgroundColor = #colorLiteral(red: 0, green: 0.9647058824, blue: 0.9176470588, alpha: 1)
-            dayView.layer.cornerRadius = 2
+            dayView.layer.cornerRadius = size / 2
             dayView.clipsToBounds = true
             dayView.alpha = 0.2
-            dayView.heightAnchor.constraint(equalToConstant: 4).isActive = true
-            dayView.widthAnchor.constraint(equalToConstant: 4).isActive = true
+            dayView.heightAnchor.constraint(equalToConstant: size).isActive = true
+            dayView.widthAnchor.constraint(equalToConstant: size).isActive = true
 
             let isPastDay = indexOfMonth + 1 < dateComponents(.month) || (indexOfMonth + 1 == dateComponents(.month) && indexOfDay + 1 <= dateComponents(.day))
 
@@ -62,7 +62,7 @@ func createDotsView() -> UIStackView {
 
         let monthStackView = UIStackView(arrangedSubviews: dayViews)
         monthStackView.axis = .horizontal
-        monthStackView.spacing = 4
+        monthStackView.spacing = size
         monthStackView.alignment = .center
         monthStackView.translatesAutoresizingMaskIntoConstraints = false
 
@@ -71,7 +71,7 @@ func createDotsView() -> UIStackView {
 
     let yearStackView = UIStackView(arrangedSubviews: monthViews)
     yearStackView.axis = .vertical
-    yearStackView.spacing = 4
+    yearStackView.spacing = size
     yearStackView.alignment = .center
     yearStackView.distribution = .equalCentering
     yearStackView.translatesAutoresizingMaskIntoConstraints = false
