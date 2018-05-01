@@ -12,3 +12,9 @@ A time progress bar of a year
 | 1 | 2 |
 |---|---|
 |![](Screenshots/1.png)|![](Screenshots/2.png)|
+
+
+### Change Log
+- Version 1.0: First release.
+
+- Version 1.1: Removed animations for Today Extension.
