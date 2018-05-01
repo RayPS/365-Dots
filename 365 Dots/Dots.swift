@@ -8,7 +8,7 @@
 
 import UIKit
 
-func createDotsView(withSize size: CGFloat = 4) -> UIStackView {
+func createDotsView(withSize size: CGFloat = 4, animationEnabled: Bool = false) -> UIStackView {
 
     var monthViews: [UIStackView] = []
 
@@ -29,27 +29,32 @@ func createDotsView(withSize size: CGFloat = 4) -> UIStackView {
             let isToday = indexOfMonth + 1 == dateComponents(.month) && indexOfDay + 1 == dateComponents(.day)
 
             if isPastDay {
-                UIView.animate(
-                    withDuration: 0.25,
-                    delay: 0.5 + 0.025 * Double(indexOfMonth * numberOfDays + indexOfDay),
-                    usingSpringWithDamping: 0.5,
-                    initialSpringVelocity: 0.0,
-                    options: [],
-                    animations: {
-                        dayView.alpha = 1.0
-                        dayView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
-                },
-                    completion: { _ in
-                        UIView.animate(withDuration: 0.5, animations: {
-                            dayView.transform = CGAffineTransform.identity
-                        })
-                        if isToday {
-                            todayDotInfinetyAnimation()
+                if animationEnabled {
+                    UIView.animate(
+                        withDuration: 0.25,
+                        delay: 0.5 + 0.025 * Double(indexOfMonth * numberOfDays + indexOfDay),
+                        usingSpringWithDamping: 0.5,
+                        initialSpringVelocity: 0.0,
+                        options: [],
+                        animations: {
+                            dayView.alpha = 1.0
+                            dayView.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+                        },
+                        completion: { _ in
+                            UIView.animate(withDuration: 0.5, animations: {
+                                dayView.transform = CGAffineTransform.identity
+                            })
+                            if isToday {
+                                todayDotInfinetyAnimation()
+                            }
                         }
-                    }
-                )
-
+                    )
+                } else {
+                    dayView.alpha = 1.0
+                }
             }
+
+
 
             func todayDotInfinetyAnimation() {
                 UIView.animate(withDuration: 0.5, animations: {

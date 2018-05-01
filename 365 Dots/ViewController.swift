@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         tipButton.clipsToBounds = true
 
 
-        let dotsView = createDotsView(withSize: 6)
+        let dotsView = createDotsView(withSize: 6, animationEnabled: true)
         dotsViewContainer.addSubview(dotsView)
 
         dotsView.topAnchor.constraint(equalTo: dotsViewContainer.topAnchor).isActive = true
