@@ -16,7 +16,7 @@ func createDotsView(withSize size: CGFloat = 4, animationEnabled: Bool = false) 
     for (indexOfMonth, numberOfDays) in monthDays.enumerated() {
         let month = indexOfMonth + 1
         var dayViews: [UIView] = []
-        for indexOfDay in 1...numberOfDays {
+        for day in 1...numberOfDays {
             let dayView = UIView()
             dayView.backgroundColor = #colorLiteral(red: 0, green: 0.9647058824, blue: 0.9176470588, alpha: 1)
             dayView.layer.cornerRadius = size / 2
@@ -26,8 +26,8 @@ func createDotsView(withSize size: CGFloat = 4, animationEnabled: Bool = false) 
             dayView.widthAnchor.constraint(equalToConstant: size).isActive = true
 
             let isPastDay = month < dateComponents(.month) ||
-                (month == dateComponents(.month) && indexOfDay <= dateComponents(.day))
-            let isToday = month == dateComponents(.month) && indexOfDay == dateComponents(.day)
+                (month == dateComponents(.month) && day <= dateComponents(.day))
+            let isToday = month == dateComponents(.month) && day == dateComponents(.day)
 
             func todayDotInfinityAnimation() {
                 UIView.animate(withDuration: 0.5, animations: {
@@ -39,7 +39,7 @@ func createDotsView(withSize size: CGFloat = 4, animationEnabled: Bool = false) 
                 if animationEnabled {
                     UIView.animate(
                         withDuration: 0.25,
-                        delay: 0.5 + 0.025 * Double(month * numberOfDays + indexOfDay),
+                        delay: 0.5 + 0.025 * Double(indexOfMonth * numberOfDays + day),
                         usingSpringWithDamping: 0.5,
                         initialSpringVelocity: 0.0,
                         options: [],
