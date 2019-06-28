@@ -16,6 +16,7 @@
 		710763E7207D53F4001D0A75 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710763E6207D53F4001D0A75 /* TodayViewController.swift */; };
 		710763EA207D53F4001D0A75 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 710763E8207D53F4001D0A75 /* MainInterface.storyboard */; };
 		710763EE207D53F4001D0A75 /* 365 Dots Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 710763E1207D53F4001D0A75 /* 365 Dots Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71388A6D22C6038000433673 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 710763D2207D52AF001D0A75 /* Assets.xcassets */; };
 		719B6A652081319A00D8E004 /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B6A632081305000D8E004 /* Dots.swift */; };
 		719B6A66208131B300D8E004 /* Dots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719B6A632081305000D8E004 /* Dots.swift */; };
 /* End PBXBuildFile section */
@@ -223,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71388A6D22C6038000433673 /* Assets.xcassets in Resources */,
 				710763EA207D53F4001D0A75 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +418,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -436,7 +438,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
@@ -455,7 +457,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -474,7 +476,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots.today-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

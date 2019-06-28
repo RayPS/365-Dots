@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ByR-HF-K2c">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ByR-HF-K2c">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wX7-3y-zQd">
-                                <rect key="frame" x="252" y="15" width="56" height="80"/>
+                                <rect key="frame" x="252" y="11" width="56" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2018" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ADs-bu-wHc">
                                         <rect key="frame" x="25" y="0.0" width="31" height="24"/>
@@ -31,7 +30,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tem-PP-Exw">
-                                        <rect key="frame" x="8.5" y="24" width="47.5" height="32"/>
+                                        <rect key="frame" x="8.5" y="28" width="47.5" height="32"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="32" id="tLh-4d-nOw"/>
                                         </constraints>
@@ -40,7 +39,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123/365" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lnl-G3-nrf">
-                                        <rect key="frame" x="4" y="56" width="52" height="24"/>
+                                        <rect key="frame" x="4" y="64" width="52" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="ytM-eg-M87"/>
                                         </constraints>
@@ -51,11 +50,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="Lnl-G3-nrf" firstAttribute="trailing" secondItem="Tem-PP-Exw" secondAttribute="trailing" id="0Uh-Ra-y9d"/>
-                                    <constraint firstItem="Lnl-G3-nrf" firstAttribute="top" secondItem="Tem-PP-Exw" secondAttribute="bottom" id="5Kr-CV-QNj"/>
+                                    <constraint firstItem="Lnl-G3-nrf" firstAttribute="top" secondItem="Tem-PP-Exw" secondAttribute="bottom" constant="4" id="5Kr-CV-QNj"/>
                                     <constraint firstAttribute="bottom" secondItem="Lnl-G3-nrf" secondAttribute="bottom" id="CPV-8i-2GN"/>
-                                    <constraint firstItem="Tem-PP-Exw" firstAttribute="top" secondItem="ADs-bu-wHc" secondAttribute="bottom" id="FOH-lX-aBx"/>
+                                    <constraint firstItem="Lnl-G3-nrf" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wX7-3y-zQd" secondAttribute="leading" id="Dp6-C5-7eg"/>
+                                    <constraint firstItem="Tem-PP-Exw" firstAttribute="top" secondItem="ADs-bu-wHc" secondAttribute="bottom" constant="4" id="FOH-lX-aBx"/>
                                     <constraint firstItem="ADs-bu-wHc" firstAttribute="top" secondItem="wX7-3y-zQd" secondAttribute="top" id="Pyt-HC-hMT"/>
                                     <constraint firstItem="Tem-PP-Exw" firstAttribute="trailing" secondItem="ADs-bu-wHc" secondAttribute="trailing" id="bsS-yD-k2w"/>
+                                    <constraint firstItem="ADs-bu-wHc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wX7-3y-zQd" secondAttribute="leading" id="dUL-mb-r8F"/>
+                                    <constraint firstItem="Tem-PP-Exw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wX7-3y-zQd" secondAttribute="leading" id="mhf-15-imB"/>
                                     <constraint firstAttribute="trailing" secondItem="ADs-bu-wHc" secondAttribute="trailing" id="voq-QL-K1l"/>
                                 </constraints>
                             </view>

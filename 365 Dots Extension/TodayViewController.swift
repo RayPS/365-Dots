@@ -22,8 +22,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         super.viewDidLoad()
 
         yearLabel.text = String(dateComponents(.year))
+        yearLabel.textColor = .white
         percentageLabel.text = percentageOfThisYear()
+        percentageLabel.textColor = UIColor(named: "Red")
         dayLabel.text = "\(nthOfDayInThisYear())/\(numberOfDaysInThisYear())"
+        dayLabel.textColor = UIColor(named: "Green")
 
         dotsView = createDotsView()
 
