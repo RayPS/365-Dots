@@ -181,9 +181,11 @@
 				TargetAttributes = {
 					710763C7207D52AD001D0A75 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1100;
 					};
 					710763E0207D53F4001D0A75 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
