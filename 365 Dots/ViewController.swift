@@ -21,6 +21,10 @@ class ViewController: UIViewController {
         return true
     }
 
+    override var prefersHomeIndicatorAutoHidden: Bool {
+        return true
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,8 +35,9 @@ class ViewController: UIViewController {
         tipButton.layer.cornerRadius = 16
         tipButton.clipsToBounds = true
 
-
-        let dotsView = createDotsView(withSize: 6, animationEnabled: true)
+        let margin: CGFloat = 48.0
+        let dotSize = (view.layer.bounds.width - margin * 2.0) / (31.0 * 2.0)
+        let dotsView = createDotsView(withSize: dotSize, animationEnabled: true)
         dotsViewContainer.addSubview(dotsView)
 
         dotsView.topAnchor.constraint(equalTo: dotsViewContainer.topAnchor).isActive = true

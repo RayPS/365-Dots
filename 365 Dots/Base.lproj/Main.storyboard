@@ -50,7 +50,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="l16-GT-gvA">
-                                <rect key="frame" x="160.5" y="261" width="247" height="32"/>
+                                <rect key="frame" x="160.5" y="240" width="247" height="32"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzq-5J-p0r">
                                         <rect key="frame" x="0.0" y="0.0" width="247" height="32"/>
@@ -77,8 +77,8 @@
                             <constraint firstItem="Z4j-z9-Gc3" firstAttribute="top" secondItem="wf2-L9-pjR" secondAttribute="bottom" constant="24" id="LAd-np-W51"/>
                             <constraint firstItem="Z4j-z9-Gc3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MBr-N5-VPw"/>
                             <constraint firstItem="Z4j-z9-Gc3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rd7-vr-WJt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="l16-GT-gvA" secondAttribute="bottom" constant="48" id="VlM-Z0-RgS"/>
                             <constraint firstItem="l16-GT-gvA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dHp-fk-uuk"/>
-                            <constraint firstItem="l16-GT-gvA" firstAttribute="top" secondItem="Z4j-z9-Gc3" secondAttribute="bottom" constant="32" id="s6J-Zh-fMo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
