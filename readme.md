@@ -18,3 +18,6 @@ A time progress bar of a year
 - Version 1.0: First release.
 
 - Version 1.1: Removed animations for Today Extension.
+
+### License
+[ROL](https://git.io/read-only-license)
