@@ -11,7 +11,40 @@
 		711B04892B5B43FD004BFD22 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B04882B5B43FD004BFD22 /* ContentView.swift */; };
 		711B048B2B5B43FE004BFD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711B048A2B5B43FE004BFD22 /* Assets.xcassets */; };
 		711B048E2B5B43FE004BFD22 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711B048D2B5B43FE004BFD22 /* Preview Assets.xcassets */; };
+		711B049B2B5B4839004BFD22 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711B049A2B5B4839004BFD22 /* WidgetKit.framework */; };
+		711B049D2B5B4839004BFD22 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 711B049C2B5B4839004BFD22 /* SwiftUI.framework */; };
+		711B04A02B5B4839004BFD22 /* Dots_365_WidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B049F2B5B4839004BFD22 /* Dots_365_WidgetBundle.swift */; };
+		711B04A42B5B4839004BFD22 /* Dots_365_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B04A32B5B4839004BFD22 /* Dots_365_Widget.swift */; };
+		711B04A62B5B4839004BFD22 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B04A52B5B4839004BFD22 /* AppIntent.swift */; };
+		711B04A82B5B483A004BFD22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 711B04A72B5B483A004BFD22 /* Assets.xcassets */; };
+		711B04AC2B5B483A004BFD22 /* Dots 365 WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 711B04982B5B4839004BFD22 /* Dots 365 WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		711B04B22B5B6418004BFD22 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B04B12B5B6418004BFD22 /* Calendar.swift */; };
+		711B04B32B5B6418004BFD22 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711B04B12B5B6418004BFD22 /* Calendar.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		711B04AA2B5B483A004BFD22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 711B047B2B5B43FD004BFD22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 711B04972B5B4839004BFD22;
+			remoteInfo = "Dots 365 WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		711B04B02B5B483B004BFD22 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				711B04AC2B5B483A004BFD22 /* Dots 365 WidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		711B04832B5B43FD004BFD22 /* Dots 365.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dots 365.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +52,15 @@
 		711B04882B5B43FD004BFD22 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		711B048A2B5B43FE004BFD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		711B048D2B5B43FE004BFD22 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		711B04982B5B4839004BFD22 /* Dots 365 WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dots 365 WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		711B049A2B5B4839004BFD22 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		711B049C2B5B4839004BFD22 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		711B049F2B5B4839004BFD22 /* Dots_365_WidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots_365_WidgetBundle.swift; sourceTree = "<group>"; };
+		711B04A32B5B4839004BFD22 /* Dots_365_Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dots_365_Widget.swift; sourceTree = "<group>"; };
+		711B04A52B5B4839004BFD22 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		711B04A72B5B483A004BFD22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		711B04A92B5B483A004BFD22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		711B04B12B5B6418004BFD22 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		711B04952B5B4839004BFD22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B049D2B5B4839004BFD22 /* SwiftUI.framework in Frameworks */,
+				711B049B2B5B4839004BFD22 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				711B04852B5B43FD004BFD22 /* Dots 365 */,
+				711B049E2B5B4839004BFD22 /* Dots 365 Widget */,
+				711B04992B5B4839004BFD22 /* Frameworks */,
 				711B04842B5B43FD004BFD22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				711B04832B5B43FD004BFD22 /* Dots 365.app */,
+				711B04982B5B4839004BFD22 /* Dots 365 WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +121,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		711B04992B5B4839004BFD22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				711B049A2B5B4839004BFD22 /* WidgetKit.framework */,
+				711B049C2B5B4839004BFD22 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		711B049E2B5B4839004BFD22 /* Dots 365 Widget */ = {
+			isa = PBXGroup;
+			children = (
+				711B049F2B5B4839004BFD22 /* Dots_365_WidgetBundle.swift */,
+				711B04A32B5B4839004BFD22 /* Dots_365_Widget.swift */,
+				711B04B12B5B6418004BFD22 /* Calendar.swift */,
+				711B04A52B5B4839004BFD22 /* AppIntent.swift */,
+				711B04A72B5B483A004BFD22 /* Assets.xcassets */,
+				711B04A92B5B483A004BFD22 /* Info.plist */,
+			);
+			path = "Dots 365 Widget";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +153,34 @@
 				711B047F2B5B43FD004BFD22 /* Sources */,
 				711B04802B5B43FD004BFD22 /* Frameworks */,
 				711B04812B5B43FD004BFD22 /* Resources */,
+				711B04B02B5B483B004BFD22 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				711B04AB2B5B483A004BFD22 /* PBXTargetDependency */,
 			);
 			name = "Dots 365";
 			productName = "Dots 365";
 			productReference = 711B04832B5B43FD004BFD22 /* Dots 365.app */;
 			productType = "com.apple.product-type.application";
+		};
+		711B04972B5B4839004BFD22 /* Dots 365 WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 711B04AD2B5B483B004BFD22 /* Build configuration list for PBXNativeTarget "Dots 365 WidgetExtension" */;
+			buildPhases = (
+				711B04942B5B4839004BFD22 /* Sources */,
+				711B04952B5B4839004BFD22 /* Frameworks */,
+				711B04962B5B4839004BFD22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dots 365 WidgetExtension";
+			productName = "Dots 365 WidgetExtension";
+			productReference = 711B04982B5B4839004BFD22 /* Dots 365 WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +193,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					711B04822B5B43FD004BFD22 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					711B04972B5B4839004BFD22 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -116,6 +214,7 @@
 			projectRoot = "";
 			targets = (
 				711B04822B5B43FD004BFD22 /* Dots 365 */,
+				711B04972B5B4839004BFD22 /* Dots 365 WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +229,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		711B04962B5B4839004BFD22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B04A82B5B483A004BFD22 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,11 +245,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				711B04892B5B43FD004BFD22 /* ContentView.swift in Sources */,
+				711B04B22B5B6418004BFD22 /* Calendar.swift in Sources */,
 				711B04872B5B43FD004BFD22 /* Dots_365App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		711B04942B5B4839004BFD22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				711B04A02B5B4839004BFD22 /* Dots_365_WidgetBundle.swift in Sources */,
+				711B04A62B5B4839004BFD22 /* AppIntent.swift in Sources */,
+				711B04A42B5B4839004BFD22 /* Dots_365_Widget.swift in Sources */,
+				711B04B32B5B6418004BFD22 /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		711B04AB2B5B483A004BFD22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 711B04972B5B4839004BFD22 /* Dots 365 WidgetExtension */;
+			targetProxy = 711B04AA2B5B483A004BFD22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		711B048F2B5B43FE004BFD22 /* Debug */ = {
@@ -267,6 +394,7 @@
 		711B04922B5B43FE004BFD22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +427,7 @@
 		711B04932B5B43FE004BFD22 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,6 +457,62 @@
 			};
 			name = Release;
 		};
+		711B04AE2B5B483B004BFD22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGAF98TG33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dots 365 Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dots 365 Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots.Dots-365-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		711B04AF2B5B483B004BFD22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MGAF98TG33;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Dots 365 Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Dots 365 Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rayps.365-dots.Dots-365-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -345,6 +530,15 @@
 			buildConfigurations = (
 				711B04922B5B43FE004BFD22 /* Debug */,
 				711B04932B5B43FE004BFD22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		711B04AD2B5B483B004BFD22 /* Build configuration list for PBXNativeTarget "Dots 365 WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				711B04AE2B5B483B004BFD22 /* Debug */,
+				711B04AF2B5B483B004BFD22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
